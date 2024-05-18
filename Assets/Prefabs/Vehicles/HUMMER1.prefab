@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7620157760209802558
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.2969
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.2969
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.2969
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 182.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.71
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7148422540665880144, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a86a0d131a482774bbd573629f2b6615, type: 2}
+    - target: {fileID: -7055235856102898082, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Name
+      value: Lastik4
+      objectReference: {fileID: 0}
+    - target: {fileID: -5436111346566423630, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ce9a02181b3bbe4e85cda5ce8004bab, type: 2}
+    - target: {fileID: -3564966343914267747, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a86a0d131a482774bbd573629f2b6615, type: 2}
+    - target: {fileID: -1727096866995629095, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Name
+      value: Lastik3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Name
+      value: HUMMER1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691366670215827594, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Name
+      value: Lastik2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059023954134468086, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a86a0d131a482774bbd573629f2b6615, type: 2}
+    - target: {fileID: 7305063149342272703, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a86a0d131a482774bbd573629f2b6615, type: 2}
+    - target: {fileID: 8488159081828018906, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
+      propertyPath: m_Name
+      value: Lastik1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e12f3fae3a7023a468e000c60be4de06, type: 3}
