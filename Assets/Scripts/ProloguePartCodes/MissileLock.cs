@@ -1,9 +1,8 @@
 using Tarodev;
 using UnityEngine;
 
-public class MissileLock : MonoBehaviour
+public class MissleLock : MonoBehaviour
 {
-    private ScriptableObject m_ScriptableObject;
     public float speed = 5f;
     public GameObject[] missiles;
     private int currentMissileIndex = 0;
@@ -19,10 +18,10 @@ public class MissileLock : MonoBehaviour
     {
         if (!allMissilesLaunched)
         {
-             Missile missle = GetComponent<Missile>();
+            Missile missile = GetComponent<Missile>();
             if (Input.GetKeyDown(KeyCode.L))
             {
-                missle.enabled = true;
+                missile.enabled = true;
                 LaunchMissile();
             }
 

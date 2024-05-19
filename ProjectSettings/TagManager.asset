@@ -12,6 +12,8 @@ TagManager:
   - Ground
   - Rocket
   - Bullet
+  - Target
+  - Enemy
   layers:
   - Default
   - TransparentFX

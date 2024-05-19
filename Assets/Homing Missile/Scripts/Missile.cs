@@ -2,11 +2,10 @@ using UnityEngine;
 
 namespace Tarodev
 {
-
     public class Missile : MonoBehaviour
     {
         [Header("REFERENCES")]
-        [SerializeField] private GameObject missile;
+        [SerializeField] private GameObject[] missiles;
         [SerializeField] private Target _target;
         [SerializeField] private GameObject _explosionPrefab;
 
@@ -26,16 +25,19 @@ namespace Tarodev
 
         private void FixedUpdate()
         {
-            // Objeyi ileriye doðru hareket ettirme
-            missile.transform.position += missile.transform.forward * _speed * Time.deltaTime;
+            foreach (var missile in missiles)
+            {
+                // Objeyi ileriye doðru hareket ettirme
+                missile.transform.position += missile.transform.forward * _speed * Time.deltaTime;
 
-            var leadTimePercentage = Mathf.InverseLerp(_minDistancePredict, _maxDistancePredict, Vector3.Distance(missile.transform.position, _target.transform.position));
+                var leadTimePercentage = Mathf.InverseLerp(_minDistancePredict, _maxDistancePredict, Vector3.Distance(missile.transform.position, _target.transform.position));
 
-            PredictMovement(leadTimePercentage);
+                PredictMovement(leadTimePercentage);
 
-            AddDeviation(leadTimePercentage);
+                AddDeviation(leadTimePercentage);
 
-            RotateRocket();
+                RotateRocket(missile);
+            }
         }
 
         private void PredictMovement(float leadTimePercentage)
@@ -49,14 +51,14 @@ namespace Tarodev
         {
             var deviation = new Vector3(Mathf.Cos(Time.time * _deviationSpeed), 0, 0);
 
-            var predictionOffset = missile.transform.TransformDirection(deviation) * _deviationAmount * leadTimePercentage;
+            var predictionOffset = deviation * _deviationAmount * leadTimePercentage;
 
             _deviatedPrediction = _standardPrediction + predictionOffset;
         }
 
-        private void RotateRocket()
+        private void RotateRocket(GameObject missile)
         {
-            var heading = _deviatedPrediction - transform.position;
+            var heading = _deviatedPrediction - missile.transform.position;
 
             var rotation = Quaternion.LookRotation(heading);
             missile.transform.rotation = Quaternion.RotateTowards(missile.transform.rotation, rotation, _rotateSpeed * Time.deltaTime);
@@ -64,16 +66,19 @@ namespace Tarodev
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (_explosionPrefab) Instantiate(_explosionPrefab, missile.transform.position, Quaternion.identity);
+            if (_explosionPrefab) Instantiate(_explosionPrefab, missiles[0].transform.position, Quaternion.identity);
             if (collision.transform.TryGetComponent<IExplode>(out var ex)) ex.Explode();
 
-            Destroy(gameObject);
+            foreach (var missile in missiles)
+            {
+                Destroy(missile.gameObject);
+            }
         }
 
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(missile.transform.position, _standardPrediction);
+            Gizmos.DrawLine(missiles[0].transform.position, _standardPrediction);
             Gizmos.color = Color.green;
             Gizmos.DrawLine(_standardPrediction, _deviatedPrediction);
         }

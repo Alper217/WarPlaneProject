@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Rocket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Rocket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Rocket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -2539,15 +2539,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1807.1442
+      value: -1651
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5216
+      value: 346.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11531.994
+      value: 1374
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3524,6 +3524,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_Name
       value: SU-57
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 920556140274779005, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5185,7 +5189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throttleIncrement: 1
-  maxThrust: 200
+  maxThrust: 500
   responsiveness: 3000
   hud: {fileID: 681172235}
 --- !u!65 &1081500106
@@ -5203,12 +5207,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 70.72437, y: 69.30568, z: 323.57257}
+  m_Center: {x: -12.495572, y: 7.6843185, z: 156.89041}
 --- !u!4 &1081500107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 170632674230742252, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
@@ -5226,7 +5230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1542878ea04ac4290c42f935cdd0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 1500
   missiles:
   - {fileID: 19733603}
   - {fileID: 18469244}
@@ -5263,22 +5267,6 @@ MonoBehaviour:
   plane: {fileID: 441409889}
   objectCount: 0
   objectLimited: 5000
---- !u!114 &1081500112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081500103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55eee8e6625bcf9439805b1e18b61833, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 200
-  missiles:
-  - {fileID: 1260004124}
-  - {fileID: 2067605314}
 --- !u!114 &1081500113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5291,7 +5279,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc1c96910eb7294dac55550d8917eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1260004124}
+  missiles:
+  - {fileID: 1260004124}
+  - {fileID: 2067605314}
   _target: {fileID: 2000626902}
   _explosionPrefab: {fileID: 1260004124}
   _speed: 500
@@ -5308,21 +5298,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bc1c96910eb7294dac55550d8917eeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 55eee8e6625bcf9439805b1e18b61833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 2067605314}
-  _target: {fileID: 2000626902}
-  _explosionPrefab: {fileID: 2067605314}
-  _speed: 500
-  _rotateSpeed: 95
-  _maxDistancePredict: 100
-  _minDistancePredict: 5
-  _maxTimePrediction: 5
-  _deviationAmount: 50
-  _deviationSpeed: 2
+  speed: 5
+  missiles:
+  - {fileID: 1260004124}
+  - {fileID: 2067605314}
 --- !u!1 &1124099641
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,7 +5932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Rocket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -6596,7 +6580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Rocket
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -7013,7 +6997,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7498,9 +7482,6 @@ PrefabInstance:
       addedObject: {fileID: 1081500111}
     - targetCorrespondingSourceObject: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1081500112}
-    - targetCorrespondingSourceObject: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1081500113}
     - targetCorrespondingSourceObject: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       insertIndex: -1
@@ -7551,7 +7532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000626897}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fb00f8148584b44a9638b04c7100bab, type: 3}
   m_Name: 
