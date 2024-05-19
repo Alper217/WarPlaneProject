@@ -443,7 +443,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 78454f1427bb1bf43836346b2dcd1c1d, type: 2}
     - target: {fileID: 7006108878199366879, guid: 8ed852f3835587041b0039c69c2451be, type: 3}
       propertyPath: m_Name
-      value: Ana baseV2
+      value: AnabaseV2
       objectReference: {fileID: 0}
     - target: {fileID: 7012732028699234646, guid: 8ed852f3835587041b0039c69c2451be, type: 3}
       propertyPath: m_Materials.Array.data[0]
