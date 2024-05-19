@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -4897,6 +4897,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2000626902}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2000626904}
   m_SourcePrefab: {fileID: 100100000, guid: 8ff0b389c9043334b874c5378772d87c, type: 3}
 --- !u!1001 &1073897612
 PrefabInstance:
@@ -5553,8 +5556,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 12.517256, y: 1, z: 4.661516}
+  m_Center: {x: -0.15047738, y: 0, z: 1.8307577}
 --- !u!4 &1260004130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 170632674230742252, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
@@ -5932,7 +5935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
@@ -7609,6 +7612,18 @@ MonoBehaviour:
   _rb: {fileID: 2000626900}
   _size: 10
   _speed: 0
+--- !u!114 &2000626904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000626897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd158f85acffd44d82791e98247e7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2006422888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c58bf0632c86d934786c13b3a9e6bfcd, type: 3}
@@ -7921,8 +7936,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 12.517256, y: 1, z: 4.661516}
+  m_Center: {x: -0.15047738, y: 0, z: 1.8307577}
 --- !u!4 &2067605320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 170632674230742252, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
