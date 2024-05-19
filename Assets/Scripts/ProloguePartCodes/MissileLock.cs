@@ -18,9 +18,10 @@ public class MissleLock : MonoBehaviour
     {
         if (!allMissilesLaunched)
         {
-            Missile missile = GetComponent<Missile>();
+           
             if (Input.GetKeyDown(KeyCode.L))
             {
+                Missile missile = GetComponent<Missile>();
                 missile.enabled = true;
                 LaunchMissile();
             }

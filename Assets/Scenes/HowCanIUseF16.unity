@@ -5277,7 +5277,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bc1c96910eb7294dac55550d8917eeb, type: 3}
   m_Name: 
@@ -7309,7 +7309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654681314169550422, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
-      value: "final u\xE7ak hangar (1)"
+      value: F16
       objectReference: {fileID: 0}
     - target: {fileID: 1037866568264085373, guid: aff0d96bb11437d49b474aae88dd2119, type: 3}
       propertyPath: m_Name
