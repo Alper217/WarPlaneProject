@@ -6,9 +6,9 @@ public class RocketBoom : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Rocket")
+        if (other.gameObject.tag == "Ground")
         {
-           other.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -9,8 +9,17 @@ public class EnemyAI : MonoBehaviour
     public GameObject bulletPrefab; // Mermi prefabý
     public Transform bulletSpawn;  // Merminin çýkýþ noktasý
     public float fireRate = 1f;    // Ateþ etme sýklýðý
+    public float minHeight = 2000f; // Minimum uçuþ yüksekliði
+    public float maxHeight = 4000f; // Maksimum uçuþ yüksekliði
 
     private float fireCooldown = 0f; // Ateþ etme bekleme süresi
+    private float targetHeight;      // Hedef yükseklik
+
+    void Start()
+    {
+        // Baþlangýçta rastgele bir hedef yükseklik belirle
+        targetHeight = Random.Range(minHeight, maxHeight);
+    }
 
     void Update()
     {
@@ -22,6 +31,9 @@ public class EnemyAI : MonoBehaviour
         {
             FireAtPlayer();
         }
+
+        // Yükseklik kontrolü
+        MaintainHeight();
     }
 
     void OrbitPlayer()
@@ -45,12 +57,50 @@ public class EnemyAI : MonoBehaviour
             fireCooldown = 1f / fireRate;
 
             // Mermiyi oluþtur ve ateþ et
-            GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-            bulletRb.velocity = bulletSpawn.forward * 20f; // Mermi hýzý
+            if (bulletPrefab != null && bulletSpawn != null)
+            {
+                GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+                Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+                if (bulletRb != null)
+                {
+                    bulletRb.velocity = bulletSpawn.forward * 20f; // Mermi hýzý
 
-            // Mermiyi belirli bir süre sonra yok et
-            Destroy(bullet, 2f);
+                    // Merminin oluþturulduðunu kontrol etmek için log ekleyin
+                    Debug.Log("Mermi ateþlendi!");
+
+                    // Mermiyi belirli bir süre sonra yok et
+                    Destroy(bullet, 2f);
+                }
+                else
+                {
+                    Debug.LogError("BulletPrefab içinde Rigidbody bileþeni bulunamadý.");
+                }
+            }
+            else
+            {
+                Debug.LogError("BulletPrefab veya BulletSpawn atanmadý.");
+            }
         }
+    }
+
+    void MaintainHeight()
+    {
+        // Hedef yüksekliðe doðru hareket et
+        float currentHeight = transform.position.y;
+
+        if (currentHeight < minHeight)
+        {
+            targetHeight = Random.Range(minHeight, maxHeight);
+        }
+        else if (currentHeight > maxHeight)
+        {
+            targetHeight = Random.Range(minHeight, maxHeight);
+        }
+
+        float heightDifference = targetHeight - currentHeight;
+        Vector3 heightAdjustment = new Vector3(0, heightDifference, 0).normalized;
+
+        // Yüksekliði ayarla
+        transform.position += heightAdjustment * speed * Time.deltaTime;
     }
 }
