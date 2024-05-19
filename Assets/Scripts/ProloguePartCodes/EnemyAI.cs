@@ -34,6 +34,9 @@ public class EnemyAI : MonoBehaviour
 
         // Yükseklik kontrolü
         MaintainHeight();
+
+        // Oyuncunun Y eksenindeki rotasyonunu sabitle
+        LockPlayerYRotation();
     }
 
     void OrbitPlayer()
@@ -102,5 +105,11 @@ public class EnemyAI : MonoBehaviour
 
         // Yüksekliði ayarla
         transform.position += heightAdjustment * speed * Time.deltaTime;
+    }
+
+    void LockPlayerYRotation()
+    {
+        Vector3 currentEulerAngles = player.rotation.eulerAngles;
+        player.rotation = Quaternion.Euler(currentEulerAngles.x, 30, currentEulerAngles.z);
     }
 }
