@@ -11,6 +11,7 @@ TagManager:
   - Chair4
   - Ground
   - Rocket
+  - Bullet
   layers:
   - Default
   - TransparentFX
