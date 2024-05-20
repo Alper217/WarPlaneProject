@@ -31,8 +31,8 @@ public class DestroyRocketBR : MonoBehaviour
             {
                 Missile missile = GetComponent<Missile>();
                 MissleLock missleLock = GetComponent<MissleLock>();
-                Destroy(missile1);
-                Destroy(missile2);
+                missile1.SetActive(false);
+                missile2.SetActive(false);
                 missile.enabled = false;
                 missleLock.enabled = false;
             }

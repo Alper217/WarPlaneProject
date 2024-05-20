@@ -64,16 +64,16 @@ namespace Tarodev
             missile.transform.rotation = Quaternion.RotateTowards(missile.transform.rotation, rotation, _rotateSpeed * Time.deltaTime);
         }
 
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (_explosionPrefab) Instantiate(_explosionPrefab, missiles[0].transform.position, Quaternion.identity);
-            if (collision.transform.TryGetComponent<IExplode>(out var ex)) ex.Explode();
+        //private void OnTriggerEnter(Collider other)
+        //{
+        //    if (_explosionPrefab) Instantiate(_explosionPrefab, missiles[0].transform.position, Quaternion.identity);
+        //    if (other.transform.TryGetComponent<IExplode>(out var ex)) ex.Explode();
 
-            foreach (var missile in missiles)
-            {
-                Destroy(missile.gameObject);
-            }
-        }
+        //    foreach (var missile in missiles)
+        //    {
+        //        Destroy(missile.gameObject);
+        //    }
+        //}
 
         private void OnDrawGizmos()
         {
