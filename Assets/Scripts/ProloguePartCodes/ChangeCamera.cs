@@ -11,6 +11,8 @@ public class ChangeCamera : MonoBehaviour
 
     private int index = 0;
     private Vector3 target;
+    private Quaternion targetRotation;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) index = 0;
@@ -18,11 +20,14 @@ public class ChangeCamera : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3)) index = 2;
         else if (Input.GetKeyDown(KeyCode.Alpha4)) index = 3;
 
-        target = povs[index].position;
+        // Transform the local position of the selected POV to the world position based on the parent object's rotation
+        target = transform.parent.TransformPoint(povs[index].localPosition);
+        targetRotation = transform.parent.rotation * povs[index].localRotation;
     }
+
     private void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target,Time.deltaTime * speed);
-        transform.forward = povs[index].forward;
+        transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * speed * 100);
     }
 }

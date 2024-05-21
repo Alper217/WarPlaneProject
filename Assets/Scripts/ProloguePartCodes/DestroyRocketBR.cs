@@ -27,7 +27,7 @@ public class DestroyRocketBR : MonoBehaviour
         if (isLoop == true)
         {
          
-            if (countdown == 1000)
+            if (countdown == 5000)
             {
                 Missile missile = GetComponent<Missile>();
                 MissleLock missleLock = GetComponent<MissleLock>();

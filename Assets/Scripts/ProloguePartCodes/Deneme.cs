@@ -17,6 +17,8 @@ public class Deneme : MonoBehaviour
     private float roll;
     private float pitch;
     private float yaw;
+    private int bulletCount = 5000;
+    private int rocketCount = 4;
     private float responseModifier
     {
         get
@@ -57,6 +59,22 @@ public class Deneme : MonoBehaviour
     {
         HandleInputs();
         UpdateHud();
+        if (Input.GetKey(KeyCode.F))
+        {
+            bulletCount -= 1;
+            if (bulletCount < 0)
+            {
+                bulletCount = 0;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            rocketCount -= 1;
+            if (rocketCount < 0)
+            {
+                rocketCount = 0;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -86,7 +104,9 @@ public class Deneme : MonoBehaviour
     private void UpdateHud()
     {
         hud.text = "Throttle: " + throttle.ToString("F0") + "%\n";
-        hud.text += "Airspeed: " + ((rb.velocity.magnitude * 3.6f) / 1.5).ToString("F0") + "km/h\n";
-        hud.text += "Altitude: " + transform.position.y.ToString("F0") + "m";
+        hud.text += "Airspeed: " + (rb.velocity.magnitude * 3.6f).ToString("F0") + "km/h\n";
+        hud.text += "Altitude: " + transform.position.y.ToString("F0") + "m\n";
+        hud.text += "Ammo: " + bulletCount +"\n";
+        hud.text += "Rockets: " + rocketCount;
     }
 }
