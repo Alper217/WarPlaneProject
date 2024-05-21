@@ -12,7 +12,7 @@ public class InteractionNPC : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name =="Player")
+        if (other.gameObject.tag == "Player")
         {
             instructionForNPC.SetActive(true);
         }
@@ -23,7 +23,7 @@ public class InteractionNPC : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
             instructionForNPC.SetActive(false);
             Dialogue.SetActive(false);

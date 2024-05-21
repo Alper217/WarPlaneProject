@@ -8,9 +8,9 @@ public class InteractionNextMission : MonoBehaviour
     {
         instructionFornNextMission.SetActive(false);
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
             instructionFornNextMission.SetActive(true);
         }
@@ -21,7 +21,7 @@ public class InteractionNextMission : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.tag == "Player")
         {
             instructionFornNextMission.SetActive(false);
         }
