@@ -2902,7 +2902,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e1542878ea04ac4290c42f935cdd0f2, type: 3}
   m_Name: 
@@ -2919,7 +2919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecc295b0442c4e6418e617b228c9de09, type: 3}
   m_Name: 
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f058ccc5021c3444adaa8c5b560db90, type: 3}
   m_Name: 
@@ -2959,7 +2959,7 @@ MonoBehaviour:
   missiles:
   - {fileID: 1260004124}
   - {fileID: 2067605314}
-  _target: {fileID: 0}
+  _target: {fileID: 2021579268}
   _explosionPrefab: {fileID: 1260004124}
   _speed: 500
   _rotateSpeed: 95
@@ -2975,7 +2975,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55eee8e6625bcf9439805b1e18b61833, type: 3}
   m_Name: 
@@ -2991,7 +2991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081500103}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97a3a6e14ef7bca47adedf2c587d605a, type: 3}
   m_Name: 
