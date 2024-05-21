@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followCharacter: {fileID: 735480688}
-  distance: -0.2
+  distance: -1.2
   minVerticalAngle: -45
   maxVerticalAngle: 45
   framingOffset: {x: 0, y: 5.7}
