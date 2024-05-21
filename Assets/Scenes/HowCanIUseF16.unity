@@ -2240,6 +2240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1a9fd7dd49d00fb4d93ed3317610ee81, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af3131e5914eb664cbfb611583c62969, type: 2}
     - target: {fileID: 919132149155446097, guid: 1a9fd7dd49d00fb4d93ed3317610ee81, type: 3}
       propertyPath: m_Name
       value: uploads_files_1007475_Gaurd03
@@ -2309,6 +2313,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9d35967649a492a4e84eff441517e955, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33114c8451cbfba4ea8f7e77fc464437, type: 2}
     - target: {fileID: 919132149155446097, guid: 9d35967649a492a4e84eff441517e955, type: 3}
       propertyPath: m_Name
       value: uploads_files_1006129_Barrack03
@@ -3797,6 +3805,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ba0a1ee0d4adbec4d970729e7a6927cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be17b15ed247c7045b0b5dc530a50161, type: 2}
     - target: {fileID: 919132149155446097, guid: ba0a1ee0d4adbec4d970729e7a6927cf, type: 3}
       propertyPath: m_Name
       value: uploads_files_1006163_Clinic03
@@ -7104,7 +7116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f3bdef27a2996144abe4e0b8047ac1e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -202.38187
+      value: -209.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f3bdef27a2996144abe4e0b8047ac1e1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7138,6 +7150,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f3bdef27a2996144abe4e0b8047ac1e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3dcbacb17d8e4c44ba4203a713b53b2b, type: 2}
     - target: {fileID: 919132149155446097, guid: f3bdef27a2996144abe4e0b8047ac1e1, type: 3}
       propertyPath: m_Name
       value: uploads_files_1018296_Workshop03
