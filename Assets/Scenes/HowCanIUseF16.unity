@@ -2794,7 +2794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db35064580a702b4db1fe5b4962dd721, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -218.3
+      value: -230.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: db35064580a702b4db1fe5b4962dd721, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2828,6 +2828,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: db35064580a702b4db1fe5b4962dd721, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 36156945472263641a5be8d750e23c2e, type: 2}
     - target: {fileID: 919132149155446097, guid: db35064580a702b4db1fe5b4962dd721, type: 3}
       propertyPath: m_Name
       value: uploads_files_1018244_Telecommunications
