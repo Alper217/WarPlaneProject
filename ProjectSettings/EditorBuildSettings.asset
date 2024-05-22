@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowCanIUseF16.unity
     guid: 1511ac6427bb9a244830cc21ac7586bf
+  - enabled: 1
+    path: Assets/Scenes/Prologue.unity
+    guid: e77655da0df65fe4694395661300a09a
   m_configObjects: {}
