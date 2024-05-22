@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class FlarePush : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform spawnPoint;
+    public GameObject flare;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Vector3 spawnPosition = (spawnPoint.position + Vector3.back*Time.deltaTime);
+            Instantiate(flare, spawnPosition, spawnPoint.rotation);
+        }
     }
 }
