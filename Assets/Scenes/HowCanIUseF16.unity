@@ -3822,39 +3822,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -220.9
+      value: -218.99196
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7071.2
+      value: 7071.1533
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.013678629
+      value: -0.01367843
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.000073621144
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9999065
+      value: -0.999892
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0053816987
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -0.617
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -181.567
+      value: -181.568
       objectReference: {fileID: 0}
     - target: {fileID: 1232772327600900308, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.017
       objectReference: {fileID: 0}
     - target: {fileID: 1896155399349146222, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
       propertyPath: m_Name
@@ -3868,6 +3868,10 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 681172235}
+    - target: {fileID: 8781747132105204374, guid: d08f35472e8a2b046ba6fddf4b427de2, type: 3}
+      propertyPath: responsiveness
+      value: 1500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -6039,7 +6039,7 @@ MonoBehaviour:
   Running: {fileID: 8300000, guid: 71f28ce9e883af44eb5aef2b0286a9f6, type: 3}
   animator: {fileID: 735480695}
   jumpForce: 100
-  speed: 5
+  speed: 20
   runSpeed: 10
   countDown: 0
   CameraMove: {fileID: 963194225}
@@ -13248,7 +13248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1094560058095655842, guid: 6caabffb4a83d6045b28a30ba4ebd0e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 149.95473
+      value: -329
       objectReference: {fileID: 0}
     - target: {fileID: 1094560058095655842, guid: 6caabffb4a83d6045b28a30ba4ebd0e9, type: 3}
       propertyPath: m_LocalRotation.w

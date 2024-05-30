@@ -8,16 +8,17 @@ public class InteractionNextMission : MonoBehaviour
     {
         instructionFornNextMission.SetActive(false);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             instructionFornNextMission.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                SceneManager.LoadScene(1);
+            }
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            SceneManager.LoadScene(1);
-        }
+        
     }
     private void OnTriggerExit(Collider other)
     {
